@@ -4,7 +4,7 @@ This repository contains a [LaTeX](https://github.com/latex3/latex2e) template t
 
 ## Documentation
 
-The template is documented at https://pascalmichaillat.org/d2/.
+The template is documented at https://pascalmichaillat.org/a/.
 
 ## Illustration
 
