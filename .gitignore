@@ -1,0 +1,19 @@
+# MacOs files
+.DS_Store
+
+# LaTeX build artifacts
+*.aux
+*.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+
+
