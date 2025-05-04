@@ -8,8 +8,8 @@ The template is documented at https://pascalmichaillat.org/a/.
 
 ## Illustration
 
-+ The paper produced by the template can be viewed at https://pascalmichaillat.org/d2.pdf.
-+ The online appendix produced by the template can be viewed at https://pascalmichaillat.org/d2a.pdf.
++ The paper produced by the template can be viewed at https://pascalmichaillat.org/a.pdf.
++ The online appendix produced by the template can be viewed at https://pascalmichaillat.org/aa.pdf.
 
 ## Usage
 
