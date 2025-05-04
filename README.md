@@ -64,5 +64,5 @@ This repository is licensed under the [MIT License](LICENSE.md).
 
 ## Related resources
 
-+ [LaTeX template for academic presentations](https://github.com/pmichaillat/latex-presentation) - This template produces academic presentations following the same principles, and with a similar appearance, as this paper template. 
-+ [LaTeX commands to write math](https://github.com/pmichaillat/latex-math) - These commands make it easy to write mathematical expressions. They can be used in combination with this paper template.
++ [latex-presentation](https://github.com/pmichaillat/latex-presentation) - This LaTeX template produces academic presentations following the same principles, and with a similar appearance, as this paper template. 
++ [latex-math](https://github.com/pmichaillat/latex-math) - These LaTeX commands make it easy to write mathematical expressions. They can be used in combination with this paper template.
