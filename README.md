@@ -47,9 +47,9 @@ The `arXiv` folder illustrates how the template should be prepared for submissio
 
 ## Software
 
-The template was developed, tested, and validated on a Mac with the MacTeX-2023 distribution. 
+The template was developed and validated with TeX Live 2023 on MacOS. 
 
-While the template should also work on other operating systems and with other LaTeX distributions, compatibility cannot be guaranteed. Users on Windows or Linux systems, or those using different LaTeX distributions, may need to make minor adjustments. [Please report](https://github.com/pmichaillat/latex-paper/issues) any compatibility issues or bugs to help improve cross-platform support.
+Other LaTeX distributions and operating systems may require minor adjustments. Please [report any issues](https://github.com/pmichaillat/latex-math/issues) to help improve compatibility.
 
 ## License
 
