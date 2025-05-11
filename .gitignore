@@ -1,6 +1,3 @@
-# MacOs files
-.DS_Store
-
 # LaTeX build artifacts
 *.aux
 *.blg
