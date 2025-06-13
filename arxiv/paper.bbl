@@ -1,0 +1,65 @@
+\begin{thebibliography}{9}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+
+\bibitem[{Eyster, Madarasz, and Michaillat(2021)}]{EMM21}
+Eyster, Erik, Kristof Madarasz, and Pascal Michaillat. 2021.
+\newblock \enquote{Pricing under Fairness Concerns.}
+\newblock \emph{Journal of the European Economic Association} 19~(3):
+  1853--1898.
+\newblock \url{https://doi.org/10.1093/jeea/jvaa041}.
+
+\bibitem[{Landais, Michaillat, and Saez(2018{\natexlab{a}})}]{LMS18a}
+Landais, Camille, Pascal Michaillat, and Emmanuel Saez. 2018{\natexlab{a}}.
+\newblock \enquote{A Macroeconomic Approach to Optimal Unemployment Insurance:
+  Applications.}
+\newblock \emph{American Economic Journal: Economic Policy} 10~(2): 182--216.
+\newblock \url{https://doi.org/10.1257/pol.20160462}.
+
+\bibitem[{Landais, Michaillat, and Saez(2018{\natexlab{b}})}]{LMS18b}
+Landais, Camille, Pascal Michaillat, and Emmanuel Saez. 2018{\natexlab{b}}.
+\newblock \enquote{A Macroeconomic Approach to Optimal Unemployment Insurance:
+  Theory.}
+\newblock \emph{American Economic Journal: Economic Policy} 10~(2): 152--181.
+\newblock \url{https://doi.org/10.1257/pol.20150088}.
+
+\bibitem[{Michaillat(2012)}]{M12}
+Michaillat, Pascal. 2012.
+\newblock \enquote{Do Matching Frictions Explain Unemployment? Not in Bad
+  Times.}
+\newblock \emph{American Economic Review} 102~(4): 1721--1750.
+\newblock \url{https://doi.org/10.1257/aer.102.4.1721}.
+
+\bibitem[{Michaillat(2014)}]{M14}
+Michaillat, Pascal. 2014.
+\newblock \enquote{A Theory of Countercyclical Government Multiplier.}
+\newblock \emph{American Economic Journal: Macroeconomics} 6~(1): 190--217.
+\newblock \url{https://doi.org/10.1257/mac.6.1.190}.
+
+\bibitem[{Michaillat and Saez(2015)}]{MS15}
+Michaillat, Pascal and Emmanuel Saez. 2015.
+\newblock \enquote{Aggregate Demand, Idle Time, and Unemployment.}
+\newblock \emph{Quarterly Journal of Economics} 130~(2): 507--569.
+\newblock \url{https://doi.org/10.1093/qje/qjv006}.
+
+\bibitem[{Michaillat and Saez(2019)}]{MS19}
+Michaillat, Pascal and Emmanuel Saez. 2019.
+\newblock \enquote{Optimal Public Expenditure with Inefficient Unemployment.}
+\newblock \emph{Review of Economic Studies} 86~(3): 1301--1331.
+\newblock \url{https://doi.org/10.1093/restud/rdy030}.
+
+\bibitem[{Michaillat and Saez(2021)}]{MS21}
+Michaillat, Pascal and Emmanuel Saez. 2021.
+\newblock \enquote{Resolving {N}ew {K}eynesian Anomalies with Wealth in the
+  Utility Function.}
+\newblock \emph{Review of Economics and Statistics} 103~(2): 197--215.
+\newblock \url{https://doi.org/10.1162/rest_a_00893}.
+
+\bibitem[{Michaillat and Saez(2022)}]{MS22}
+Michaillat, Pascal and Emmanuel Saez. 2022.
+\newblock \enquote{An Economical Business-Cycle Model.}
+\newblock \emph{Oxford Economic Papers} 74~(2): 382--411.
+\newblock \url{https://doi.org/10.1093/oep/gpab021}.
+
+\end{thebibliography}

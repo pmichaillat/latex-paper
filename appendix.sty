@@ -1,0 +1,52 @@
+% ---- Format table of contents ----
+
+% Customize table of contents
+\usepackage[subfigure]{tocloft}
+
+% Eliminate "Table of Contents"
+\renewcommand{\contentsname}{}
+
+% Set font size for content
+\renewcommand{\cftsecfont}{\normalfont}
+
+% Set font size for page numbers
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+% Set separator after labels
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+
+% Set spacing between dots
+\renewcommand{\cftdotsep}{10}
+
+% Set spacing between sections
+\setlength{\cftbeforesecskip}{0em}
+
+% ---- Format sections ----
+
+% Format section headings
+\titleformat{\section}{\centering\large\bfseries}{Appendix~\thesection.}{1em}{}
+
+% Format section labels
+\renewcommand{\thesection}{\Alph{section}}
+
+% Insert page break after each section
+\newcommand{\sectionbreak}{\clearpage}
+
+% ---- Format labels ----
+
+% Add "A" in front of labels
+\renewcommand{\thetheorem}{A\arabic{theorem}}
+\renewcommand{\theproposition}{A\arabic{proposition}}
+\renewcommand{\thelemma}{A\arabic{lemma}}
+\renewcommand{\thecorollary}{A\arabic{corollary}}
+\renewcommand{\thedefinition}{A\arabic{definition}}
+\renewcommand{\theassumption}{A\arabic{assumption}}
+\renewcommand{\theremark}{A\arabic{remark}}
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\renewcommand{\theequation}{A\arabic{equation}}
+
+% ---- Enable crossreferences ----
+
+\usepackage{xr}

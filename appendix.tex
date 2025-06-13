@@ -1,0 +1,191 @@
+\documentclass[letterpaper,11pt,leqno]{article}
+\usepackage{paper,appendix}
+\bibliographystyle{paper}
+
+% Enter appendix title to populate PDF metadata:
+\hypersetup{pdftitle={Minimalist LaTeX Template for Online Appendices}}
+
+% Enter path to BibTeX file with references:
+\newcommand{\bib}{paper.bib}
+
+% Enter path to PDF file with figures:
+\newcommand{\pdf}{figures.pdf}
+
+% Enter main TeX file so references can be used in appendix:
+\externaldocument{paper}
+
+\begin{document}
+
+% Enter title:
+\title{Research Paper: Online Appendices}
+
+% Enter authors:
+\author{First Author, Second Author}
+
+% Enter date:
+\date{Month Year}
+
+% Enter publication journal and permanent URL (can be commented out):
+\available[Journal]{https://github.com/pmichaillat/latex-paper}
+
+\begin{titlepage}
+\maketitle
+\tableofcontents
+\end{titlepage}
+
+% Enter text of online appendix:
+\section{Generic appendix}\label{a:appendix1}
+
+This is a generic appendix. Obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\subsection{Generic subsection} 
+
+This is a subsection in the appendix. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+\subsection{Subsection with references from the main text} 
+
+The references from the main text (in the \texttt{paper.tex} file) are available in the online appendix as long as the appendix is compiled after the main text and the auxiliary LaTeX file \texttt{paper.aux} is available. Here are some references to the main text: equation \ref{e:type1} was very helpful; figure \ref{f:graph1} provided a lot of information---especially the plot on figure \ref{f:panel2}; section \ref{s:graphs} presented new results, and so did section \ref{s:lists}. Table~\ref{t:table1} contained interesting information.
+
+\subsection{Subsection with assumptions and results}
+
+Here is an assumption in the appendix:
+
+\begin{assumption} Similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga:
+\begin{equation*}
+\mathbb{E}(\Omega_{m,n}) = \mathbb{P}(\omega\cdot \mu - \xi) - \sum_{i=0}^{m}\sum_{j=1}^{n} \sigma(i,j) + 123^{56}.
+\end{equation*}\label{a:app}\end{assumption}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Here is a result:
+\begin{theorem}
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum:
+\begin{equation}
+X^* =\iint_{0}^{\infty} \alpha(i) \cdot \mathcal{A}^2(i) + \mathbb{P}(X\mid Z(i))\,di\,dj,\end{equation}\end{theorem}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam magna vel urna ultrices, sed lacinia nulla mattis. Fusce non nunc nec est mollis malesuada. Followed by another result based on assumption~\ref{a:app}:
+\begin{theorem}
+Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua: $y(\gamma) \geq 3\pi + \cos(\vartheta)$.
+\label{t:theorem1}\end{theorem}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam magna vel urna ultrices, sed lacinia nulla mattis. Fusce non nunc nec est mollis malesuada. Nullam dignissim nulla sit amet libero facilisis, eget fringilla libero sagittis. Suspendisse potenti. Vivamus fermentum consectetur ante, at rhoncus nisi tristique vel. Vivamus in est quis justo fermentum lacinia ac eu leo. Maecenas nec tempor nisi---as in theorem \ref{t:theorem1}.
+
+\subsection{Subsection with math}
+
+Here are math and an equation in the appendix---see equation \eqref{e:appendix1}. Temporibus autem quibusdam $\xi$ et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae $1-\gamma$. Itaque earum rerum hic $S(z^*)$ tenetur a sapiente delectus $\mathcal{B}^\theta$, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat $\mathbb{V}^i$:
+\begin{equation}
+\mathbb{V}^r = (1-\gamma) \times 0 +\gamma S(z^*) v^s+\gamma [1-S(z^*)] \mathcal{V}^i-c.
+\label{e:appendix1}\end{equation}
+
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+\begin{equation}
+\mathbb{E}(N(z)) = \frac{1}{1-\gamma F(z)}.
+\label{e:experiments}\end{equation}
+Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur (equation \eqref{e:experiments}).
+
+\subsection{Subsection with a foonote}
+
+Here is a sentence with a footnote.\footnote{Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.} 
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\section{Another appendix}\label{a:appendix2}
+
+Here is a second appendix. At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Subsection with references}\label{a:subappendix}
+
+Here is a sentence with some citations: \citet{MS19,MS21} found something but that is an uncommon result \citep[chapter 5]{M12}. It is also possible to cite the authors of a study by name, or the year of a study: for instance, \citeauthor{EMM21} wrote a paper in \citeyear{EMM21} (see also the paper by \citealp{M14}). The references go to their own reference list at the end of the appendix. By contrast, when the appendix is at the end of the main text, the appendix shares the list of references with the main text. 
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Subsection with a URL}
+
+Here is an URL: \url{https://github.com/pmichaillat/latex-paper}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Larger figure, without panel, in the appendix} 
+
+Here is a large, simple figure in the appendix (see figure \ref{f:appendix1}). At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+\begin{figure}[t]
+\includegraphics[scale=0.3,page=1]{\pdf}
+\caption{A larger graph in the appendix}
+\note{Note for the larger graph. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus. Vivamus faucibus sapien nec aliquam fermentum. Suspendisse auctor nisl eu nunc lobortis, id efficitur mi bibendum. Donec viverra nisi et urna consequat, eget sodales nunc congue.}
+\label{f:appendix1}\end{figure}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Even larger figure, without panel, in the appendix} 
+
+\begin{figure}[p]
+\includegraphics[scale=0.4,page=3]{\pdf}
+\caption{An even larger graph in the appendix}
+\note[Note]{Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus. Mauris id ante convallis, dignissim quam sed, eleifend elit. Integer consectetur magna sit amet arcu gravida sollicitudin. Integer nec lacus non mauris fermentum gravida.}
+\label{f:appendix2}\end{figure}
+
+Figure \ref{f:appendix2} shows an even larger figure in the appendix. At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Sed vehicula ipsum sit amet magna accumsan, nec pulvinar nisl consequat. In ac hendrerit turpis. Sed aliquet luctus mauris, vitae congue turpis. Nullam blandit lacus vel interdum eleifend. Donec commodo justo a eros malesuada, eget vulputate tortor accumsan. Sed ac pulvinar nulla. Etiam quis felis dapibus, vulputate metus eu, finibus nunc. Sed vel sodales dui. Nam venenatis dolor non orci tempus fermentum. Vivamus sodales justo a ligula cursus aliquet. Sed fringilla nunc vitae justo finibus, id placerat lectus sodales.
+
+\section{Last appendix with text}
+
+This is a last appendix with a bit of text.
+
+\subsection{A first subsection}
+
+Sed vestibulum ex a tristique lacinia. Integer interdum magna vel magna rutrum fermentum. Maecenas sed mi in nunc convallis rutrum. Vivamus dapibus bibendum est, ac tincidunt ipsum fermentum id. Nunc id est turpis. Suspendisse potenti. Sed ac laoreet nulla, eu sollicitudin libero. Suspendisse tempus orci nec mauris volutpat eleifend. Integer nec tristique libero. 
+
+\subsection{A second subsection}
+
+Nam pretium mauris eros, nec sollicitudin risus tincidunt a. Vivamus in augue vitae ligula scelerisque dapibus. Integer eget metus aliquet, efficitur nibh eget, pharetra eros. Suspendisse luctus interdum ex id suscipit. Donec quis augue mauris. Nulla ut erat eget nisl hendrerit malesuada. Vivamus eu tortor sit amet sem fringilla eleifend. In hac habitasse platea dictumst. Suspendisse potenti. Ut eget libero sed orci tempor ullamcorper:
+\begin{equation}
+S^*(z) = \frac{\alpha}{1-\gamma (1-\alpha)} > \alpha.
+\label{e:type1Classical}\end{equation}
+
+\subsection{A third subsection}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam magna vel urna ultrices, sed lacinia nulla mattis. Fusce non nunc nec est mollis malesuada. Nullam dignissim nulla sit amet libero facilisis, eget fringilla libero sagittis. Suspendisse potenti. Vivamus fermentum consectetur ante, at rhoncus nisi tristique vel. Vivamus in est quis justo fermentum lacinia ac eu leo. Maecenas nec tempor nisi. Sed interdum, nunc ac dapibus lacinia, nunc neque rutrum urna, vel dignissim lectus turpis eu lorem. Donec commodo justo a eros malesuada, eget vulputate tortor accumsan. Sed ac pulvinar nulla. Etiam quis felis dapibus, vulputate metus eu, finibus nunc. Sed vel sodales dui. Nam venenatis dolor non orci tempus fermentum. Vivamus sodales justo a ligula cursus aliquet. Sed fringilla nunc vitae justo finibus, id placerat lectus sodales.
+
+\bibliography{\bib}
+\end{document}
