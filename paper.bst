@@ -1251,7 +1251,7 @@ FUNCTION {format.lab.names}
       't :=
       nameptr #1 >
         {
-          nameptr #4 =
+          nameptr #2 =
           numnames #3 > and
             { "others" 't :=
               #1 'namesleft := }
