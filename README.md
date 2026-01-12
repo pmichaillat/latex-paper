@@ -76,7 +76,7 @@ This repository is licensed under the [MIT License](LICENSE.md).
 + [Recession Detection Using Classifiers on the Anticipation-Precision Frontier](https://arxiv.org/pdf/2506.09664v4.pdf) ([source code](https://arxiv.org/src/2506.09664v4))
 + [Has the Recession Started?](https://arxiv.org/pdf/2408.05856v2.pdf) ([source code](https://arxiv.org/src/2408.05856v2))
 + [Beveridgean Phillips Curve](https://arxiv.org/pdf/2401.12475v2.pdf) ([source code](https://arxiv.org/src/2401.12475v2))
-+ [Modeling Migration-Induced Unemployment](https://arxiv.org/pdf/2303.13319v4.pdf) ([source code](https://arxiv.org/src/2303.13319v4))
++ [Modeling Migration-Induced Unemployment](https://arxiv.org/pdf/2303.13319v5.pdf) ([source code](https://arxiv.org/src/2303.13319v5))
 + [Critical Values Robust to P-hacking](https://arxiv.org/pdf/2005.04141v7.pdf) ([source code](https://arxiv.org/src/2005.04141v7))
 
 ## Related resources
