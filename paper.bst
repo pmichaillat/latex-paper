@@ -1,55 +1,41 @@
 %%
 %% This is file `paper.bst',
-%% generated with the docstrip utility.
+%% originally generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
 %% merlin.mbs  (with options: `ay,nat,nm-revv1,jnrlst,nmlm,x10,x0,m10,m0,mcite,mct-3,mct-x3,dt-beg,yr-per,note-yr,tit-qq,atit-u,vnum-sp,volp-sp,num-xser,ser-ed,jnm-x,add-pub,url-doi,edparxc,edby,pp,abr,ednx,xedn,url,url-blk,nfss,')
+%%
 %% ----------------------------------------
+%%
+%% This file was originally generated from merlin.mbs with docstrip but has been manually modified and is no longer identical to the generated output. 
+%%
+%% Do not overwrite by re-running docstrip without preserving changes.
+%%
+%% ----------------------------------------
+%%
 %% *** Bibliography style file for latex-paper ***
 %% 
 %% Copyright 1994-2011 Patrick W Daly
- % ===============================================================
- % IMPORTANT NOTICE:
- % This bibliographic style (bst) file has been generated from one or
- % more master bibliographic style (mbs) files, listed above.
- %
- % This generated file can be redistributed and/or modified under the terms
- % of the LaTeX Project Public License Distributed from CTAN
- % archives in directory macros/latex/base/lppl.txt; either
- % version 1 of the License, or any later version.
- % ===============================================================
- % Name and version information of the main mbs file:
- % \ProvidesFile{merlin.mbs}[2011/11/18 4.33 (PWD, AO, DPC)]
- %   For use with BibTeX version 0.99a or later
- %-------------------------------------------------------------------
- % This bibliography style file is intended for texts in ENGLISH
- % This is an author-year citation style bibliography. As such, it is
- % non-standard LaTeX, and requires a special package file to function properly.
- % Such a package is    natbib.sty   by Patrick W. Daly
- % The form of the \bibitem entries is
- %   \bibitem[Jones et al.(1990)]{key}...
- %   \bibitem[Jones et al.(1990)Jones, Baker, and Smith]{key}...
- % The essential feature is that the label (the part in brackets) consists
- % of the author names, as they should appear in the citation, with the year
- % in parentheses following. There must be no space before the opening
- % parenthesis!
- % With natbib v5.3, a full list of authors may also follow the year.
- % In natbib.sty, it is possible to define the type of enclosures that is
- % really wanted (brackets or parentheses), but in either case, there must
- % be parentheses in the label.
- % The \cite command functions as follows:
- %   \citet{key} ==>>                Jones et al. (1990)
- %   \citet*{key} ==>>               Jones, Baker, and Smith (1990)
- %   \citep{key} ==>>                (Jones et al., 1990)
- %   \citep*{key} ==>>               (Jones, Baker, and Smith, 1990)
- %   \citep[chap. 2]{key} ==>>       (Jones et al., 1990, chap. 2)
- %   \citep[e.g.][]{key} ==>>        (e.g. Jones et al., 1990)
- %   \citep[e.g.][p. 32]{key} ==>>   (e.g. Jones et al., 1990, p. 32)
- %   \citeauthor{key} ==>>           Jones et al.
- %   \citeauthor*{key} ==>>          Jones, Baker, and Smith
- %   \citeyear{key} ==>>             1990
- %---------------------------------------------------------------------
+%% ----------------------------------------
+%% IMPORTANT NOTICE:
+%% This bibliographic style (bst) file has been generated from one or
+%% more master bibliographic style (mbs) files, listed above.
+%%
+%% This generated file can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN
+%% archives in directory macros/latex/base/lppl.txt; either
+%% version 1 of the License, or any later version.
+%% ----------------------------------------
+%% Name and version information of the main mbs file:
+%% \ProvidesFile{merlin.mbs}[2011/11/18 4.33 (PWD, AO, DPC)]
+%%   For use with BibTeX version 0.99a or later
+%% ----------------------------------------
+%% This bibliography style file is intended for texts in ENGLISH
+%% This is an author-year citation style bibliography. As such, it is
+%% non-standard LaTeX, and requires a special package file to function properly.
+%% Such a package is    natbib.sty   by Patrick W. Daly
+%% ----------------------------------------
 
 ENTRY
   { address
@@ -252,7 +238,7 @@ FUNCTION {bbl.chapter}
 { "chap." }
 
 FUNCTION {bbl.techrep}
-{ "Tech. Rep." }
+{ "" }
 
 FUNCTION {bbl.mthesis}
 { "Master's thesis" }
@@ -333,7 +319,6 @@ FUNCTION {format.url}
 }
 
 INTEGERS { nameptr namesleft numnames }
-
 
 STRINGS  { bibinfo}
 
@@ -806,6 +791,10 @@ FUNCTION {format.vol.num.pages}
     { format.journal.pages }
     { format.journal.eid }
   if$
+  duplicate$ empty$
+    { pop$ "." }
+    { " " swap$ * }
+  if$
 }
 
 FUNCTION {format.chapter.pages}
@@ -935,7 +924,7 @@ FUNCTION {article}
       "journal" bibinfo.check
       emphasize
       "journal" output.check
-      add.blank
+      before.all 'output.state :=
       format.vol.num.pages output
     }
     { format.article.crossref output.nonnull
@@ -970,6 +959,8 @@ FUNCTION {book}
       new.block
       format.number.series output
       new.sentence
+      format.edition output
+      new.sentence
       format.publisher.address output
     }
     {
@@ -977,7 +968,6 @@ FUNCTION {book}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   new.block
   format.url output
   new.block
@@ -1024,6 +1014,8 @@ FUNCTION {inbook}
       new.block
       format.number.series output
       new.sentence
+      format.edition output
+      new.sentence
       format.publisher.address output
     }
     {
@@ -1032,7 +1024,6 @@ FUNCTION {inbook}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   new.block
   format.url output
   new.block
@@ -1053,8 +1044,9 @@ FUNCTION {incollection}
       format.number.series output
       format.chapter.pages output
       new.sentence
-      format.publisher.address output
       format.edition output
+      new.sentence
+      format.publisher.address output
     }
     { format.incoll.inproc.crossref output.nonnull
       format.chapter.pages output
