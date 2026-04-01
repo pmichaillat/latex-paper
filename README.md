@@ -27,7 +27,7 @@ A few files in the repository are required to use the paper template but do not 
 A few files in the repository are not required to use the paper template but are useful for other purposes:
 
 - The file `paper.pdf` illustrates the output of the template. It will be overwritten when `paper.tex` is compiled.
-- The file `paper.bbl` illustrates the bibliography produced by the template. It will be overwritten when `paper.tex` is compiled. A copy of that file is also included in the `arxiv` folder.
+- The file `paper.bbl` illustrates the bibliography produced by the template. It will be overwritten when `paper.tex` is compiled.
 - The file `paper.aux` is necessary to produce the online appendix out of the box. It will be overwritten when `paper.tex` is compiled.
 
 ## Online appendix
@@ -56,11 +56,21 @@ A few files are not required to use the appendix template but are useful for oth
 
 The template is compatible with [arXiv](https://arxiv.org/). After being compiled with pdfTeX, a paper based on the template can be submitted to arXiv in three steps:
 
-1. Collect the required files into a folder. There should be four files: the source file `paper.tex`, the bibliography file `paper.bbl`, the style file `paper.sty`, and the figure file `figures.pdf`. The file `paper.bib` should not be included as arXiv will use `paper.bbl` to produce the bibliography.
-2. Adjust the preamble of `paper.tex`. On line 3, replace `\bibliographystyle{bibliography}` by `\pdfoutput=1`. The `\bibliographystyle{bibliography}` command is not needed because arXiv produces the bibliography from the `paper.bbl` file. The `\pdfoutput=1` is required because the paper is compiled with pdfTeX.
-3. Zip the folder and upload the zipped folder to arXiv.
+- Collect the required files into a folder. There should be only 4 files: 
 
-The `arXiv` folder illustrates how the template should be prepared for submission to arXiv. The folder contains the four required files: `paper.tex`, `paper.bbl`, `paper.sty`, and `figures.pdf`. Furthermore, the preamble of `paper.tex` is adjusted appropriately. After being zipped, the folder could be uploaded to arXiv and would compile properly.
+	1. the source file `paper.tex`
+	2. the style file `paper.sty`
+	3. the bibliography file `paper.bbl` 
+	4. the figure file `figures.pdf`
+
+- Adjust the preamble of `paper.tex`. On line 3, replace `\bibliographystyle{paper}` by `\pdfoutput=1`.
+- Zip the folder and upload the zipped folder to arXiv.
+
+Here are a few things to note:
+
+- The `paper.bib` and `paper.bst` files should not be included in your submission as arXiv will use `paper.bbl` to produce the bibliography. 
+- The command `\bibliographystyle{paper}` is not needed in `paper.tex` because arXiv produces the bibliography directly from the `paper.bbl` file. In fact that command would produce an error since the style file `paper.bst` is not included in the submission.
+- The command `\pdfoutput=1` is required in `paper.tex` because the paper is compiled with pdfTeX.
 
 ## Software
 

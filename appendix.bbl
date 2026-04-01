@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -9,6 +9,12 @@ Eyster, Erik, Kristof Madarasz, and Pascal Michaillat. 2021.
 \newblock \emph{Journal of the European Economic Association} 19~(3):
   1853--1898.
 \newblock \url{https://doi.org/10.1093/jeea/jvaa041}.
+
+\bibitem[{McCloskey and Michaillat(2026)}]{MM26}
+McCloskey, Adam and Pascal Michaillat. 2026.
+\newblock \enquote{Critical Values Robust to P-hacking.}
+\newblock \emph{Review of Economics and Statistics} 108~(4).
+\newblock \url{https://doi.org/10.1162/rest_a_01456}.
 
 \bibitem[{Michaillat(2012)}]{M12}
 Michaillat, Pascal. 2012.
