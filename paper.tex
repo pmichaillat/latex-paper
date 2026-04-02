@@ -75,12 +75,9 @@ References can be appended at the end of a sentence, in parenthesis \citep{MS15}
 
 \paragraph{Another paragraph with some numbers and special characters} Pellentesque habitant 25\% morbi tristique senectus 1837--1905 et netus et malesuada fames ac turpis egestas. Integer semper euismod sapien vel dictum \#1 and \#6. Vivamus nec nunc sed metus interdum suscipit. (Maecenas tristique felis sed eleifend aliquet.) Donec et ipsum 3/4 in mauris ultricies pulvinar 9/2. Nullam quis ``sapien a justo'' vestibulum fermentum. Cras sed odio \& vitae mi placerat mollis: \$23.
 
-\subsection{Subsection with an URL}
+\subsection{Subsection with URL}
 
-It is possible to insert a URL: \url{https://github.com/pmichaillat/latex-paper}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+It is possible to insert URLs, such as the URL for this paper template's repository: \url{https://github.com/pmichaillat/latex-paper}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -228,19 +225,26 @@ Lists are not very common in scientific papers, but they are sometimes useful. T
 
 \subsection{Subsection with itemized lists}
 
-Here is an itemized list with two levels:
+
+Here is a basic itemized list with one level:
 \begin{itemize}
 \item Et harum quidem rerum facilis est et expedita distinctio.
 \item Nam libero tempore, cum soluta nobis est eligendi optio.
-\item Emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Nam libero tempore, cum soluta nobis est eligendi optio:
+\item Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\end{itemize}
+Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, repellendus. Here is a list with two levels:
+\begin{itemize}
+\item Et harum quidem rerum facilis est et expedita distinctio.
+\item Nam libero tempore, assumenda est, repellendus, cum soluta nobis est eligendi optio:
 \begin{itemize}
 \item Cumque nihil impedit
-\item Quo minus id, quod maxime placeat
+\item Quo minus id, quod maxime placeat. Emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet---nam libero tempore, cum (soluta) nobis est eligendi optio.
 \item Facere possimus, omnis voluptas assumenda est
 \end{itemize}
-\item Et harum quidem rerum facilis est et expedita distinctio.
-\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\item Emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Nam libero tempore, cum soluta nobis est eligendi optio.
 \end{itemize}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{Subsection with numbered lists}\label{s:numberedlists}
 
@@ -268,19 +272,19 @@ Here is a section with a variety of graphs. At vero eos et accusamus et iusto od
 A simple two-panel graph is on figure \ref{f:graph1}. It will be placed at the top of the page, just about here. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
 
 \begin{figure}[t]
-\subcaptionbox{A first panel, 1951--2019\label{f:panel1}}{\includegraphics[scale=0.2,page=1]{\pdf}}\hfill
-\subcaptionbox{A second panel, 1951--2019\label{f:panel2}}{\includegraphics[scale=0.2,page=2]{\pdf}}
+\subcaptionbox{A first panel, 1951--2019\label{f:panelA}}{\includegraphics[scale=0.2,page=1]{\pdf}}\hfill
+\subcaptionbox{A second panel, 1951--2019\label{f:panelB}}{\includegraphics[scale=0.2,page=2]{\pdf}}
 \caption{Graph with two panels}
 \note{This is a note for the graph. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus.}
 \label{f:graph1}\end{figure}
 
-\subsection{Subsection with references to figures and panels} 
+\subsection{References to figures and panels} 
 
-As usual with LaTeX, it is easy to refer to a figure: see figure \ref{f:graph1}. It is possible to refer to a specific panel in a figure, for instance figure \ref{f:panel1} or figure \ref{f:panel2}. Its also possible to refer to the entire figure, for instance figure \ref{f:graph1} or figure \ref{f:graph2}. It is also possible to refer to a panel within a figure by itself, for instance panel \subref{f:panel1} or panel \subref{f:panel2} in figure \ref{f:graph1}.
+As usual with LaTeX, it is easy to refer to a figure: see figure \ref{f:graph1}. It is possible to refer to a specific panel in a figure, for instance figure \ref{f:panelA} or figure \ref{f:panelB}. Its also possible to refer to the entire figure, for instance figure \ref{f:graph1} or figure \ref{f:graph2}.
 
 \subsection{A subsection with a full-page figure}
 
-Here is a full-page figure (figure \ref{f:graph2}). It will be placed in a full page about here.
+Here is a full-page figure (figure \ref{f:graph2}). It will be placed in a full page about here. At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
 
 \begin{figure}[p]
 \subcaptionbox{A first black-and-white panel}{\includegraphics[scale=0.2,page=5]{\pdf}}\hfill
@@ -293,7 +297,7 @@ Here is a full-page figure (figure \ref{f:graph2}). It will be placed in a full 
 \note[Note]{Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aenean fermentum purus id lacus volutpat, a eleifend mi posuere! Mauris nec nunc commodo, vehicula enim nec; vehicula ex. Nullam euismod lorem at eros efficitur: ut ultricies ante fringilla? Nam sagittis sapien id tortor commodo—a pulvinar velit ultricies. Integer ac magna velorci mollis vestibulum. Fusce id ipsum vel magna placerat vehicula. Curabitur ac lobortis justo.}
 \label{f:graph2}\end{figure}
 
-At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
 
 \section{A section with table}
 
@@ -365,14 +369,30 @@ Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saep
 
 \section{A section with cross-references}
 
-As usual, it is possible to reference an equation, such as equation \eqref{e:cv}. It is also possible to reference a section, such as section \ref{s:graphs}, or a subsection, such as section \ref{s:numberedlists}. It is also possible to reference an appendix, such as appendix \ref{a:appendix1}, or a subsection in an appendix, such as appendix~\ref{a:subappendix}. Of course it is possible to reference figures, such as figure \ref{f:graph2}, or tables, such as table~\ref{t:table1}.
+As usual, it is possible to reference an equation, such as equation \eqref{e:cv}. It is also possible to reference a section, such as section \ref{s:graphs}, or a subsection, such as section \ref{s:numberedlists}. It is also possible to reference an appendix, such as appendix \ref{a:appendix1}, or a subsection in an appendix, such as appendix~\ref{a:subappendix}. 
 
+Of course it is possible to reference figures, such as figure \ref{f:graph2}, or tables, such as table~\ref{t:table1}. It is possible to refer to a specific panel in a figure, for instance figure \ref{f:panelA} or figure \ref{f:panelB}, and to the entire figure, for instance figure \ref{f:graph1} or figure \ref{f:graph2}.
+
+\section{Quotes}
+
+It is easy to quote material within the paper. Vivamus at commodo nisl. Integer sodales eros a metus efficitur, eu tincidunt leo ullamcorper. Sed fermentum tellus nec nisi lobortis, vel pharetra neque mollis. Cras non dolor ut ex semper lobortis. Vivamus sit amet sapien in elit sodales luctus. Donec a tortor ut elit consequat mollis ac id metus. Maecenas vehicula, turpis at lacinia interdum, dolor dolor pretium turpis, non fermentum purus magna at est. Quotes appear as follows:
+
+\begin{quote}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{quote}
+
+So this was a one-paragraph quote. Cras non dolor ut ex semper lobortis. Vivamus sit amet sapien in elit sodales luctus. Donec a tortor ut elit consequat mollis ac id metus. Maecenas vehicula, turpis at lacinia interdum, dolor dolor pretium turpis, non fermentum purus magna at est. 
 
 \section{Conclusion}\label{s:ccl}
 
 \paragraph{Summary}  At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint.
 
-\paragraph{Implications} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur suscipit metus eget quam consequat, eget condimentum justo consectetur. Donec interdum ante nec felis fringilla, a rhoncus magna dapibus. Sed ultricies odio et magna consequat, ut posuere felis vehicula. Vivamus at commodo nisl. Integer sodales eros a metus efficitur, eu tincidunt leo ullamcorper. Sed fermentum tellus nec nisi lobortis, vel pharetra neque mollis. Cras non dolor ut ex semper lobortis. Vivamus sit amet sapien in elit sodales luctus. Donec a tortor ut elit consequat mollis ac id metus. Maecenas vehicula, turpis at lacinia interdum, dolor dolor pretium turpis, non fermentum purus magna at est. 
+\paragraph{Implications} Dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur suscipit metus eget quam consequat, eget condimentum justo consectetur. Donec interdum ante nec felis fringilla, a rhoncus magna dapibus. Sed ultricies odio et magna consequat, ut posuere felis vehicula. Vivamus at commodo nisl. Integer sodales eros a metus efficitur, eu tincidunt leo ullamcorper. Sed fermentum tellus nec nisi lobortis, vel pharetra neque mollis. Cras non dolor ut ex semper lobortis. Vivamus sit amet sapien in elit sodales luctus. Donec a tortor ut elit consequat mollis ac id metus. Maecenas vehicula, turpis at lacinia interdum, dolor dolor pretium turpis, non fermentum purus magna at est. 
 
 \paragraph{Next steps} Sed in purus nec nulla vulputate scelerisque. Curabitur rutrum aliquet sollicitudin. Suspendisse dapibus metus nunc, id tempus orci accumsan at. Sed rutrum purus velit, vel sollicitudin risus bibendum sed. Sed suscipit arcu ut purus malesuada dictum. Vivamus nec posuere neque. Sed consequat, odio sit amet cursus tincidunt, nulla nunc vulputate elit, ac pharetra eros metus nec ex. Vivamus at ligula id odio auctor blandit a et velit. Suspendisse potenti. Nunc efficitur est id tortor consectetur, sed convallis velit vulputate. Phasellus lacinia magna nec neque viverra ullamcorper.
 

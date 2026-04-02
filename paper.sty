@@ -13,9 +13,6 @@
 % Select monospaced font
 \usepackage{sourcecodepro}
 
-% Select URL font
-\usepackage[hyphens]{url}
-
 % ---- Select math fonts ----
 
 % Select symbol font
@@ -43,17 +40,8 @@
 % Customize page dimensions
 \usepackage{geometry}
 
-% Set top margin
-\geometry{top=1in}
-
-% Set bottom margin
-\geometry{bottom=1.2in}
-
-% Set side margins
-\geometry{left=1.3in,right=1.3in}
-
-% Set placement of page number
-\geometry{footskip=0.7in}
+% Set all margins and place page number
+\geometry{top=1in, left=1.3in, right=1.3in, bottom=1.2in, footskip=0.7in}
 
 % ---- Adjust spacing ----
 
@@ -79,7 +67,7 @@
 \pagestyle{fancy}
 
 % Eliminate header line
-\renewcommand{\headrule}{}
+\renewcommand{\headrulewidth}{0pt}
 
 % Clear header and footer
 \fancyhf{}
@@ -88,11 +76,8 @@
 % Place centered page number at foot of regular pages
 \fancyfoot[C]{\thepage}
 
-% Define custom commands with complex argument specifications
-\usepackage{xparse}
-
 % Place URL and publication information at foot of title page
-\NewDocumentCommand{\available}{o g}{%
+\NewDocumentCommand{\available}{o m}{%
 \fancypagestyle{plain}{\fancyfoot[C]{\color{gray}\footnotesize%
 \IfValueT{#1}{Published in \emph{#1}\;\textbullet\;}%
 Available at \url{#2}}}}
@@ -128,10 +113,10 @@ Available at \url{#2}}}}
 \titleformat*{\subsection}{\bfseries}
 
 % Format paragraph headings
-\titleformat{\paragraph}[runin]{\itshape}{}{}{}[\@addpunct{.}]
+\titleformat{\paragraph}[runin]{\itshape}{}{}{}[\@addpunct{.}\hspace{1em}]
 
 % Add period after heading numbers
-\titlelabel{\thetitle.\quad}
+\titlelabel{\thetitle.\hspace{1em}}
 
 % ---- Format theorems and proofs ----
 
@@ -139,7 +124,7 @@ Available at \url{#2}}}}
 \usepackage{amsthm}
 
 % Define theorem style
-\newtheoremstyle{paper}{0.5em}{0.5em}{\itshape}{}{\scshape}{.}{0.5em}{}
+\newtheoremstyle{paper}{0.5em}{0.5em}{\itshape}{}{\scshape}{.}{1em}{}
 
 % Apply theorem style
 \theoremstyle{paper}
@@ -153,8 +138,8 @@ Available at \url{#2}}}}
 \newtheorem{assumption}{assumption}
 \newtheorem{remark}{remark}
 
-% Format proof heading
-\renewcommand{\proofname}{\upshape\scshape proof}
+% Format proof environment
+\renewenvironment{proof}[1][\proofname]{\par\parskip0pt\pushQED{\qed}\normalfont\topsep0.5em\relax\trivlist\item[\hskip\labelsep\upshape\scshape#1\@addpunct{.}\hspace{1em}]\ignorespaces}{\popQED\endtrivlist\@endpefalse}
 
 % ---- Format figures and tables ----
 
@@ -177,7 +162,7 @@ Available at \url{#2}}}}
 \makeatletter\g@addto@macro\@floatboxreset\centering\makeatother 
 
 % Adjust spacing in tables
-\renewcommand{\arraystretch}{1.1}
+\renewcommand{\arraystretch}{1.2}
 
 % Set font size in tables
 \BeforeBeginEnvironment{tabular*}{\footnotesize}
@@ -189,22 +174,25 @@ Available at \url{#2}}}}
 % Customize captions and subcaptions
 \usepackage{caption,subcaption}
 
+% Define label separator: period + 1em horizontal space
+\DeclareCaptionLabelSeparator{periodem}{.\hspace{1em}}
+
 % Format captions
-\captionsetup{labelsep=period}
+\captionsetup{labelsep=periodem}
 
 % Place table captions above table
 \captionsetup[table]{position=top}
 
 % Format subcaptions
-\captionsetup[sub]{labelformat=simple,labelsep=period,size=small}
+\captionsetup[sub]{labelformat=simple,labelsep=periodem,size=small}
 
 % Write figure sublabels in Roman caps
 \renewcommand{\thesubfigure}{\Alph{subfigure}}
 
 % Create note for tables and figures
-\NewDocumentCommand{\note}{o g}{%
-\parbox{\textwidth}{\footnotesize\vspace*{10pt}%
-\IfValueT{#1}{\textit{#1}:\quad}%
+\NewDocumentCommand{\note}{o m}{%
+\parbox{\linewidth}{\footnotesize\vspace*{10pt}%
+\IfValueT{#1}{\textit{#1}.\hspace{1em}}%
 #2}}
 
 % ---- Format equations ----
@@ -218,15 +206,12 @@ Available at \url{#2}}}}
 \usepackage{enumitem}
 
 % Format itemized lists
-\setlist[itemize,1]{leftmargin=\parindent,label=\color{gray}{\upshape\textbullet}} % First level
-\setlist[itemize,2]{leftmargin=2\parindent,label=\color{gray}{\upshape\textendash}} % Second level
+\setlist[itemize, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\textbullet}, topsep=0.5em, itemsep=0.5em, parsep=0pt} % First level
+\setlist[itemize, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\textendash}, topsep=0.25em, itemsep=0.25em, parsep=0pt} % Second level
 
 % Format numbered lists
-\setlist[enumerate,1]{leftmargin=\parindent,label=\color{gray}{\upshape\alph*.}} % First level
-\setlist[enumerate,2]{leftmargin=2\parindent,label=\color{gray}{\upshape\roman*.}} % Second level
-
-% Eliminate extra spacing between items
-\setlist{nosep}
+\setlist[enumerate, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\arabic*.}, topsep=0.5em, itemsep=0.5em, parsep=0pt} % First level
+\setlist[enumerate, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\Alph*.}, topsep=0.25em, itemsep=0.25em, parsep=0pt} % Second level
 
 % ---- Format bibliography ----
 
@@ -278,4 +263,5 @@ Available at \url{#2}}}}
 
 % ---- Enable hyperlinks  ----
 
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[pdftex,hidelinks,hypertexnames=false,pdfpagemode=UseNone,pdfdisplaydoctitle=true]{hyperref}
