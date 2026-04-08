@@ -19,7 +19,7 @@
 \usepackage{MnSymbol}
 
 % Select calligraphic and blackboard-bold fonts
-\usepackage[cal=euler,bb=fourier]{mathalpha}
+\usepackage[cal=euler, bb=fourier]{mathalpha}
 
 % Enable bold math characters
 \newcommand{\hmmax}{0} % Avoid "Too many math alphabets" error
@@ -27,7 +27,7 @@
 \usepackage{bm}
 
 % Select font for Roman letters, Greek letters, digits, and punctuation
-\usepackage[italic,eulergreek,nolessnomore,noparenthesis,noplusnominus,noequal,nohbar]{mathastext}
+\usepackage[italic, eulergreek, nolessnomore, noparenthesis, noplusnominus, noequal, nohbar]{mathastext}
 
 % Correct spacing around certain Roman letters
 \MTsetmathskips{f}{3mu}{0mu}
@@ -37,11 +37,7 @@
 
 % ---- Adjust page layout ----
 
-% Customize page dimensions
-\usepackage{geometry}
-
-% Set all margins and place page number
-\geometry{top=1in, left=1.3in, right=1.3in, bottom=1.2in, footskip=0.7in}
+\usepackage[top=1in, left=1.3in, right=1.3in, bottom=1.2in, footskip=0.7in]{geometry}
 
 % ---- Adjust spacing ----
 
@@ -77,7 +73,7 @@
 \fancyfoot[C]{\thepage}
 
 % Place URL and publication information at foot of title page
-\NewDocumentCommand{\available}{o m}{%
+\NewDocumentCommand{\paperurl}{o m}{%
 \fancypagestyle{plain}{\fancyfoot[C]{\color{gray}\footnotesize%
 \IfValueT{#1}{Published in \emph{#1}\;\textbullet\;}%
 Available at \url{#2}}}}
@@ -172,7 +168,7 @@ Available at \url{#2}}}}
 \renewcommand{\figurename}{\textsc{figure}}
 
 % Customize captions and subcaptions
-\usepackage{caption,subcaption}
+\usepackage{caption, subcaption}
 
 % Define label separator: period + 1em horizontal space
 \DeclareCaptionLabelSeparator{periodem}{.\hspace{1em}}
@@ -184,7 +180,7 @@ Available at \url{#2}}}}
 \captionsetup[table]{position=top}
 
 % Format subcaptions
-\captionsetup[sub]{labelformat=simple,labelsep=periodem,size=small}
+\captionsetup[sub]{labelformat=simple, labelsep=periodem, size=small}
 
 % Write figure sublabels in Roman caps
 \renewcommand{\thesubfigure}{\Alph{subfigure}}
@@ -264,4 +260,4 @@ Available at \url{#2}}}}
 % ---- Enable hyperlinks  ----
 
 \PassOptionsToPackage{hyphens}{url}
-\usepackage[pdftex,hidelinks,hypertexnames=false,pdfpagemode=UseNone,pdfdisplaydoctitle=true]{hyperref}
+\usepackage[pdftex, hidelinks, hypertexnames=false, pdfpagemode=UseNone, pdfdisplaydoctitle=true]{hyperref}
