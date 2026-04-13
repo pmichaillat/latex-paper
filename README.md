@@ -56,21 +56,20 @@ A few files are not required to use the appendix template but are useful for oth
 
 The template is compatible with [arXiv](https://arxiv.org/). After being compiled with pdfTeX, a paper based on the template can be submitted to arXiv in three steps:
 
-- Collect the required files into a folder. There should be only 4 files: 
+- Collect the 4 required files into a folder: 
 
-	1. the source file `paper.tex`
-	2. the style file `paper.sty`
-	3. the bibliography file `paper.bbl` 
-	4. the figure file `figures.pdf`
+	1. The source file `paper.tex`
+	2. The style file `paper.sty`
+	3. The bibliography file `paper.bbl` 
+	4. The figure file `figures.pdf`
 
-- Adjust the preamble of `paper.tex`. On line 3, replace `\bibliographystyle{paper}` by `\pdfoutput=1`.
+- Remove `\bibliographystyle{paper}` from the preamble of `paper.tex`.
 - Zip the folder and upload the zipped folder to arXiv.
 
 Here are a few things to note:
 
 - The `paper.bib` and `paper.bst` files should not be included in your submission as arXiv will use `paper.bbl` to produce the bibliography. 
 - The command `\bibliographystyle{paper}` is not needed in `paper.tex` because arXiv produces the bibliography directly from the `paper.bbl` file. In fact that command would produce an error since the style file `paper.bst` is not included in the submission.
-- The command `\pdfoutput=1` is required in `paper.tex` because the paper is compiled with pdfTeX.
 
 ## Software
 
