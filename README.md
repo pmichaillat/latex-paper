@@ -74,7 +74,7 @@ Here are a few things to note:
 ## Software
 
 - The template is currently operational with TeX Live 2025 on macOS.
-- Other LaTeX distributions and operating systems may require minor adjustments. Please [report any issues](https://github.com/pmichaillat/latex-math/issues) to help improve compatibility.
+- Other LaTeX distributions and operating systems may require minor adjustments. Please [report any issues](https://github.com/pmichaillat/latex-paper/issues) to help improve compatibility.
 
 ## License
 
