@@ -97,6 +97,7 @@ This repository is licensed under the [MIT License](LICENSE.md).
 - [Measuring Geopolitical Alignment and Economic Growth](https://arxiv.org/pdf/2507.04833v6) (by T. Fan) ([source code](https://arxiv.org/src/2507.04833v6))
 - [MarketBench: Evaluating AI Agents as Market Participants](https://arxiv.org/pdf/2604.23897v1.pdf) (by A. Fradkin and R. Krishnan) ([source code](https://arxiv.org/src/2604.23897v1))
 - [Automation Experiments and Inequality](https://arxiv.org/pdf/2510.24923v1.pdf) (by S. Benzell and K. Myers) ([source code](https://arxiv.org/src/2510.24923v1))
+- [Productivity Beliefs and Efficiency in Science](https://arxiv.org/pdf/2510.24916v1.pdf) (by F. Bertolotti, K. Myers, and W. Y. Tham) ([source code](https://arxiv.org/src/2510.24916v1))
 - [Green Shields: The Role of ESG in Uncertain Time](https://arxiv.org/pdf/2506.02143v1.pdf) (by F. Kansoy and D. Stasiulaitis) ([source code](https://arxiv.org/src/2506.02143v1))
 - [The Empirical Content of Revealed Preference in High Dimensions](https://arxiv.org/pdf/2605.29361v1.pdf) (by I. Crawford and L. Tian) ([source code](https://arxiv.org/src/2605.29361v1))
 - [Beveridgean Unemployment Gap with Part-time Employment](https://arxiv.org/pdf/2606.21801) (by R. Zhang) ([source code](https://arxiv.org/src/2606.21801))
