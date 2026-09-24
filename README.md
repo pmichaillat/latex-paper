@@ -102,7 +102,7 @@ This repository is licensed under the [MIT License](LICENSE.md).
 - [The Empirical Content of Revealed Preference in High Dimensions](https://arxiv.org/pdf/2605.29361v1.pdf) (by I. Crawford and L. Tian) ([source code](https://arxiv.org/src/2605.29361v1))
 - [Beveridgean Unemployment Gap with Part-time Employment](https://arxiv.org/pdf/2606.21801) (by R. Zhang) ([source code](https://arxiv.org/src/2606.21801))
 - [Recession Detection in Japan using Labor Market Data](https://arxiv.org/pdf/2606.00948) (by N. Sikand and R. Zhang) ([source code](https://arxiv.org/src/2606.00948))
-- [Dynamic Latent-Factor Model with High-Dimensional Asset Characteristics](https://arxiv.org/pdf/2405.15721) (by A. Baybutt) ([source code]((https://arxiv.org/src/2405.15721)))
+- [Dynamic Latent-Factor Model with High-Dimensional Asset Characteristics](https://arxiv.org/pdf/2405.15721) (by A. Baybutt) ([source code](https://arxiv.org/src/2405.15721))
 - [Reputation-Driven Adoption and Avoidance of Algorithmic Decision Aids in Credence Goods Markets](https://arxiv.org/pdf/2401.17929v3.pdf) (by A. Erlei and L. Meub) ([source code](https://arxiv.org/src/2401.17929v3))
 - [Factor-Biased Efficiency Gains from Exporting: Evidence from Colombia](https://arxiv.org/pdf/2407.14016v5.pdf) (by J. Hong and D. Luparello) ([source code](https://arxiv.org/src/2407.14016v5))
 - [External and Internal Market for Managers](https://gstoledo.github.io/docs/Toledo_JMP.pdf) (by G. Toledo)
