@@ -82,10 +82,10 @@ This repository is licensed under the [MIT License](LICENSE.md).
 
 ## Real-world implementations
 
+- [Beveridgean Phillips Curve](https://arxiv.org/pdf/2401.12475v3.pdf) (by P. Michaillat and E. Saez) ([source code](https://arxiv.org/src/2401.12475v3))
+- [Modeling Migration-Induced Unemployment](https://arxiv.org/pdf/2303.13319v6.pdf) (by P. Michaillat) ([source code](https://arxiv.org/src/2303.13319v6))
 - [Recession Detection Using Classifiers on the Anticipation-Precision Frontier](https://arxiv.org/pdf/2506.09664v4.pdf) (by P. Michaillat) ([source code](https://arxiv.org/src/2506.09664v4))
 - [Has the Recession Started?](https://arxiv.org/pdf/2408.05856v2.pdf) (by P. Michaillat and E. Saez) ([source code](https://arxiv.org/src/2408.05856v2))
-- [Beveridgean Phillips Curve](https://arxiv.org/pdf/2401.12475v2.pdf) (by P. Michaillat and E. Saez) ([source code](https://arxiv.org/src/2401.12475v2))
-- [Modeling Migration-Induced Unemployment](https://arxiv.org/pdf/2303.13319v5.pdf) (by P. Michaillat) ([source code](https://arxiv.org/src/2303.13319v5))
 - [Critical Values Robust to P-hacking](https://arxiv.org/pdf/2005.04141v7.pdf) (by A. McCloskey and P. Michaillat) ([source code](https://arxiv.org/src/2005.04141v7))
 
 ## Related resources
