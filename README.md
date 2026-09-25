@@ -106,6 +106,9 @@ This repository is licensed under the [MIT License](LICENSE.md).
 - [Dynamic Latent-Factor Model with High-Dimensional Asset Characteristics](https://arxiv.org/pdf/2405.15721) (by A. Baybutt)
 - [Reputation-Driven Adoption and Avoidance of Algorithmic Decision Aids in Credence Goods Markets](https://arxiv.org/pdf/2401.17929v3.pdf) (by A. Erlei and L. Meub)
 - [Factor-Biased Efficiency Gains from Exporting: Evidence from Colombia](https://arxiv.org/pdf/2407.14016v5.pdf) (by J. Hong and D. Luparello)
+- [Why Do Contract Workers Earn Less? Evidence from India’s Auto Industry](https://arxiv.org/pdf/2507.08222v2.pdf) (by D. Luparello)
+- [The Determinants of Net Interest Margin in the Turkish Banking Sector: Does Bank Ownership Matter?](https://arxiv.org/pdf/2506.04384v2.pdf) (by F. Kansoy)
+- [Staged Entry](https://arxiv.org/pdf/2505.24460v3.pdf) (by F. Del Prato and P. Zacchia)
 
 ## Related resources
 
