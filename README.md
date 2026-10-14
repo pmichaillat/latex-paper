@@ -6,10 +6,9 @@ This repository contains a [LaTeX](https://github.com/latex3/latex2e) template t
 
 The template is documented at https://pascalmichaillat.org/a/.
 
-## Illustration
+## Preview
 
-- The paper produced by the template can be viewed at https://pascalmichaillat.org/a.pdf.
-- The online appendix produced by the template can be viewed at https://pascalmichaillat.org/aa.pdf.
+The paper produced by the template can be viewed at https://pascalmichaillat.org/a.pdf. The online appendix produced by the template can be viewed at https://pascalmichaillat.org/aa.pdf.
 
 ## Usage
 
